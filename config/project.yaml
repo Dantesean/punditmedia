@@ -1,0 +1,48 @@
+dateModified: 1553768973
+email:
+  fromEmail: jbergman@punditmedia.nl
+  fromName: 'Pundit Media'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  6ec5f533-0fd0-4512-89c6-5fa28c322de5:
+    name: Common
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.2
+siteGroups:
+  171d0af2-7313-4afd-af99-f41ec2e20101:
+    name: 'Pundit Media'
+sites:
+  869fc337-8944-4b18-b2f2-de64f1193f6e:
+    baseUrl: 'http://localhost:3860'
+    handle: default
+    hasUrls: true
+    language: nl
+    name: 'Pundit Media'
+    primary: true
+    siteGroup: 171d0af2-7313-4afd-af99-f41ec2e20101
+    sortOrder: 1
+system:
+  edition: solo
+  name: 'Pundit Media'
+  live: true
+  schemaVersion: 3.1.25
+  timeZone: America/Los_Angeles
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
+volumes:
+  64345948-ac0f-446d-93bb-b95eb0b1aa2c:
+    name: Uploads
+    handle: uploads
+    type: craft\volumes\Local
+    hasUrls: true
+    url: '@web/uploads'
+    settings:
+      path: '@webroot/uploads'
+    sortOrder: 1

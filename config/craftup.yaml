@@ -1,0 +1,12 @@
+name: punditmedia
+port: 3860
+securityKey: 0a6ef32d-14c2-404f-8999-57e3dc04ceda
+servers:
+  - name: production
+    url: http://punditmedia.com
+    ftp:
+      host: ""
+      webdir: ""
+      username: ""
+      password: ""
+      port: 21
