@@ -1,8 +1,17 @@
 {% extends "layouts/default" %}
+{% set entry = craft.entries.section('homepage').one() %}
 
 {% block content %}
-    <section>
-        <h1>Hi there.</h1>
-        <p>Welcome to this new website.</p>
-    </section>
+    <div class="home">
+        <footer>
+            <div class="col-35">
+                <img src={{ entry.afbeelding.one().url }} alt="Jeroen Bergman">
+            </div>
+            <div class="col-65">
+                <h1>{{ entry.title }}</h1>
+                {{ entry.description }}
+                <p>For inquiries please <a href="mailto:jbergman@punditmedia.nl">e-mail us</a>.</p>
+            </div>
+        </footer>
+    </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-dateModified: 1553768973
+dateModified: 1566553864
 email:
   fromEmail: jbergman@punditmedia.nl
   fromName: 'Pundit Media'
@@ -6,30 +6,239 @@ email:
 fieldGroups:
   6ec5f533-0fd0-4512-89c6-5fa28c322de5:
     name: Common
+  39ada4a6-5998-4856-a5fe-716831296505:
+    name: Homepage
+  f1716473-8edc-4b73-8601-3e408bb51211:
+    name: Clients
+fields:
+  8cf1973e-710f-4223-8a0e-cadcae8faa00:
+    name: Description
+    handle: description
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\redactor\Field
+    settings:
+      redactorConfig: ''
+      purifierConfig: ''
+      cleanupHtml: '1'
+      purifyHtml: '1'
+      columnType: text
+      availableVolumes: '*'
+      availableTransforms: '*'
+    contentColumnType: text
+    fieldGroup: 39ada4a6-5998-4856-a5fe-716831296505
+  d9838263-2a96-429c-a14b-f1ffcf8649fa:
+    name: Afbeelding
+    handle: afbeelding
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: ''
+      defaultUploadLocationSource: 'volume:64345948-ac0f-446d-93bb-b95eb0b1aa2c'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:64345948-ac0f-446d-93bb-b95eb0b1aa2c'
+      singleUploadLocationSubpath: ''
+      restrictFiles: '1'
+      allowedKinds:
+        - image
+      sources: '*'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: ''
+      selectionLabel: ''
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: 39ada4a6-5998-4856-a5fe-716831296505
+  fe70c940-c25c-4f5d-a622-16277ec202a5:
+    name: Slogan
+    handle: slogan
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 6ec5f533-0fd0-4512-89c6-5fa28c322de5
+  398a8126-ffb0-4df9-af67-c83cd0498da8:
+    name: Logo
+    handle: logo
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: ''
+      defaultUploadLocationSource: 'volume:64345948-ac0f-446d-93bb-b95eb0b1aa2c'
+      defaultUploadLocationSubpath: ''
+      singleUploadLocationSource: 'volume:64345948-ac0f-446d-93bb-b95eb0b1aa2c'
+      singleUploadLocationSubpath: ''
+      restrictFiles: '1'
+      allowedKinds:
+        - image
+      sources: '*'
+      source: null
+      targetSiteId: null
+      viewMode: list
+      limit: '1'
+      selectionLabel: ''
+      localizeRelations: false
+    contentColumnType: string
+    fieldGroup: f1716473-8edc-4b73-8601-3e408bb51211
+  66040cd1-045a-4e9d-b617-ad08d0554e4c:
+    name: Bio
+    handle: bio
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\redactor\Field
+    settings:
+      redactorConfig: ''
+      purifierConfig: ''
+      cleanupHtml: '1'
+      purifyHtml: '1'
+      columnType: text
+      availableVolumes: '*'
+      availableTransforms: '*'
+    contentColumnType: text
+    fieldGroup: f1716473-8edc-4b73-8601-3e408bb51211
+  1676599f-3d48-4ff9-9e0c-67cc9ea4e8c1:
+    name: Website
+    handle: website
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Url
+    settings:
+      placeholder: ''
+    contentColumnType: string
+    fieldGroup: f1716473-8edc-4b73-8601-3e408bb51211
+globalSets:
+  e8a19739-d5be-43fb-b342-b377cf9c7406:
+    name: Slogan
+    handle: slogan
+    fieldLayouts:
+      60785e96-584c-4586-8429-dd1135b42c7d:
+        tabs:
+          -
+            name: Slogan
+            sortOrder: 1
+            fields:
+              fe70c940-c25c-4f5d-a622-16277ec202a5:
+                required: false
+                sortOrder: 1
 plugins:
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.2.2
+sections:
+  561468ff-77d8-4d46-889e-ad01669965b8:
+    name: Homepage
+    handle: homepage
+    type: single
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      869fc337-8944-4b18-b2f2-de64f1193f6e:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: __home__
+        template: /
+    entryTypes:
+      459ce30b-153b-4a4e-95c9-4ec7041f2125:
+        name: Homepage
+        handle: homepage
+        hasTitleField: true
+        titleLabel: Titel
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+        fieldLayouts:
+          f2e0e319-a3dc-4c12-9099-d19018a67862:
+            tabs:
+              -
+                name: Homepage
+                sortOrder: 1
+                fields:
+                  d9838263-2a96-429c-a14b-f1ffcf8649fa:
+                    required: false
+                    sortOrder: 1
+                  8cf1973e-710f-4223-8a0e-cadcae8faa00:
+                    required: false
+                    sortOrder: 2
+  cb079490-4cac-4890-a900-47c729fdc348:
+    name: Clients
+    handle: clients
+    type: structure
+    enableVersioning: true
+    propagateEntries: true
+    siteSettings:
+      869fc337-8944-4b18-b2f2-de64f1193f6e:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: 'clients/{slug}'
+        template: clients/
+    structure:
+      uid: f1716583-6f3e-4a0b-9466-57fc45a7f0f1
+      maxLevels: ''
+    entryTypes:
+      ccf1ecc5-2923-45ad-8a15-c0b35c83f70c:
+        name: Clients
+        handle: clients
+        hasTitleField: true
+        titleLabel: 'Client Name'
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
+        fieldLayouts:
+          6e0df823-9505-44ee-8c0e-15cc0cd8c10b:
+            tabs:
+              -
+                name: Clients
+                sortOrder: 1
+                fields:
+                  66040cd1-045a-4e9d-b617-ad08d0554e4c:
+                    required: false
+                    sortOrder: 1
+                  398a8126-ffb0-4df9-af67-c83cd0498da8:
+                    required: false
+                    sortOrder: 2
+                  1676599f-3d48-4ff9-9e0c-67cc9ea4e8c1:
+                    required: false
+                    sortOrder: 3
 siteGroups:
   171d0af2-7313-4afd-af99-f41ec2e20101:
     name: 'Pundit Media'
 sites:
   869fc337-8944-4b18-b2f2-de64f1193f6e:
-    baseUrl: 'http://localhost:3860'
-    handle: default
-    hasUrls: true
-    language: nl
-    name: 'Pundit Media'
-    primary: true
     siteGroup: 171d0af2-7313-4afd-af99-f41ec2e20101
-    sortOrder: 1
+    name: 'Pundit Media'
+    handle: default
+    language: nl
+    hasUrls: true
+    baseUrl: 'http://localhost:3860'
+    sortOrder: '1'
+    primary: '1'
 system:
   edition: solo
   name: 'Pundit Media'
   live: true
   schemaVersion: 3.1.25
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Amsterdam
 users:
   requireEmailVerification: true
   allowPublicRegistration: false

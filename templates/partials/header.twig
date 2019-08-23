@@ -1,0 +1,15 @@
+<header>
+    <div class="col-35">
+        <img src="/assets/images/logo.png" alt="Pundit Media Logo">
+        <div class="divider"></div>
+    </div>
+    <div class="col-65">
+        <div class="slogan">
+        {{ slogan.slogan }}
+        </div>
+        <nav>
+            <a href="/" {% if craft.app.request.getSegment(1) == "" %}class="active"{% endif %}>HOME</a> | <a
+                    href="/clients" {% if craft.app.request.getSegment(1) == "clients" %}class="active"{% endif %}>CLIENTS</a>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,19 @@
+{% extends "layouts/default" %}
+{% set entries = craft.entries.section('clients').all() %}
+
+{% block content %}
+    <div class="clients">
+        {% for entry in entries %}
+            <div class="row">
+                <div class="col-35">
+                    <img src={{ entry.logo.one().url }} alt="{{ entry.title }}"
+                         {% if entry.title == "SPI" %}class="spi"{% endif %}>
+                </div>
+                <div class="col-65">
+                    <h1>{{ entry.title }}</h1>
+                    {{ entry.bio }}{% if entry.website %}Visit <a href="{{ entry.website }}">www.{{ entry.website | trim('http://') }}</a>{% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
